@@ -1,16 +1,11 @@
-
-require "api_view/views/box_score"
-require "api_view/views/basketball/play_by_play_record"
-
 class BasketballBoxScoreApiView < BoxScoreApiView
 
   attributes :attendance, :referees
-  alias_method :box_score, :object
+  main_object :box_score
 
-  def convert
-    super
-    store :last_play, BasketballPlayByPlayRecordApiView.new(box_score.last_play).convert
-    self
+
+  def instance_convert
+    field :last_play, box_score.last_play, via: BasketballPlayByPlayRecordApiView
   end
 
 end

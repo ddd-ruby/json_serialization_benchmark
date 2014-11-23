@@ -13,18 +13,9 @@ require 'presenters/basketball/event_presenter'
 
 require 'oj'
 Oj.mimic_JSON() # this will speedup benchmarks using #to_json
-require 'find'
-require 'api_view/api_view'
+require 'api_view/init'
 
 module SerializationBenchmark
-
-  # load api_view models
-
-  Find.find(File.expand_path(File.dirname(__FILE__) + '/lib/api_view/views')) do |path|
-    next if not File.file? path
-    require path
-  end
-
   collection_size = 100
   rabl_view_path  = File.expand_path(File.dirname(__FILE__) + '/lib/rabl/views')
 
