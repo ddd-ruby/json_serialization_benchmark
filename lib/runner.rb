@@ -1,4 +1,4 @@
-module SerializationBenchmark
+module Runner
   def self.run
     collection_size = 100
     rabl_view_path  = File.expand_path(File.dirname(__FILE__) + '/rabl/views')

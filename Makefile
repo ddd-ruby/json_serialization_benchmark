@@ -1,2 +1,2 @@
 benchmark:
-	bundle exec ruby benchmark.rb
+	bin/benchmark

@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "json_serialization_benchmark"
+Runner.run
