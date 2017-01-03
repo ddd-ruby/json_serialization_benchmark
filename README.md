@@ -15,13 +15,13 @@ presenters for JSON serialization.
 
 3. Install required gems
 
-        bundle install
+        bin/setup
 
 ## Usage
 
 * Run the benchmarks
 
-        bundle exec ruby benchmark.rb
+        bin/benchmark
 
 
 
