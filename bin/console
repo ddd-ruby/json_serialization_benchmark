@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "json_serialization_benchmark"
+
+require "irb"
+IRB.start
