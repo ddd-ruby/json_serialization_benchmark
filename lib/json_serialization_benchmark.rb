@@ -19,6 +19,7 @@ require 'models/team'
 require 'rabl/init'
 require 'serializers/init'
 require 'api_view/init'
+require 'active_serializer/init'
 
 require 'serializers/event_summary_serializer'
 require 'serializers/team_serializer'
