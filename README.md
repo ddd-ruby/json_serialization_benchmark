@@ -1,4 +1,4 @@
-# RABL vs. ActiveModel Serializers vs. Plain Ruby Presenters
+# RABL vs. ActiveModel Serializers vs. Plain Ruby Presenters vs. ApiView
 
 Performance benchmark of RABL, ActiveModel Serializers, and plain Ruby
 presenters for JSON serialization.
@@ -7,7 +7,7 @@ presenters for JSON serialization.
 
 1. Clone the repo
 
-        git clone git@github.com:scoremedia/json-serialization-benchmark.git
+        git clone git@github.com:ddd-ruby/json_serialization_benchmark.git
 
 2. Change directory to json-serialization-benchmark
 
