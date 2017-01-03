@@ -1,8 +1,19 @@
 GIT
+  remote: git://github.com/ddd-ruby/active_serializer.git
+  revision: ac8081ce4a39c8e1a8f7c9ccb9aae71033cd9d26
+  specs:
+    active_serializer (0.1.1)
+
+GIT
   remote: git://github.com/mindreframer/api_view.git
   revision: d2ef707177f927607008c99e784876e6754002bf
   specs:
     api_view (0.5.0)
+
+PATH
+  remote: .
+  specs:
+    json_serialization_benchmark (0.5)
 
 GEM
   remote: https://rubygems.org/
@@ -59,6 +70,7 @@ GEM
       nokogiri (~> 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rake (10.4.2)
     require_pattern (1.1.1)
     ruby-prof (0.16.2)
     thread_safe (0.3.5)
@@ -70,11 +82,16 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
+  active_serializer!
   api_view!
   bixby-bench
+  bundler (~> 1.13)
+  json_serialization_benchmark!
+  minitest (~> 5.0)
   multi_json
   oj
   rabl
+  rake (~> 10.0)
   require_pattern
   ruby-prof
 

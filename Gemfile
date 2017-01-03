@@ -1,11 +1,16 @@
 source 'https://rubygems.org'
 
-gem 'rabl'
-gem 'oj'
-gem 'active_model_serializers'
+gemspec
+
 gem 'multi_json'
+gem 'oj'
+gem 'require_pattern'
 gem 'ruby-prof'
 gem 'bixby-bench'
-gem 'api_view', github: 'mindreframer/api_view'
 
-gem 'require_pattern'
+
+## contenders
+gem 'rabl'
+gem 'active_model_serializers'
+gem 'api_view', github: 'mindreframer/api_view'
+gem 'active_serializer', github: 'ddd-ruby/active_serializer'
