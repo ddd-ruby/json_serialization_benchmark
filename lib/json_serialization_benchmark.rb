@@ -11,3 +11,11 @@ require 'models/team'
 
 require 'rabl/init'
 require 'serializers/init'
+
+require 'serializers/event_summary_serializer'
+require 'serializers/team_serializer'
+require 'serializers/basketball/event_serializer'
+
+require 'presenters/event_summary_presenter'
+require 'presenters/team_presenter'
+require 'presenters/basketball/event_presenter'
