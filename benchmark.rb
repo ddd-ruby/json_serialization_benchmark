@@ -97,7 +97,7 @@ module SerializationBenchmark
     end
 
     b.report('AMS Ultra Simple: Collection') do
-      ActiveModel::ArraySerializer.new(team_collection, each_serializer: TeamSerializer).to_json
+      ActiveModel::Serializer::CollectionSerializer.new(team_collection, each_serializer: TeamSerializer).to_json
     end
 
     b.report('Presenters Ultra Simple: Collection') do
@@ -117,7 +117,7 @@ module SerializationBenchmark
     end
 
     b.report('AMS Simple: Collection') do
-      ActiveModel::ArraySerializer.new(event_collection, each_serializer: EventSummarySerializer).to_json
+      ActiveModel::Serializer::CollectionSerializer.new(event_collection, each_serializer: EventSummarySerializer).to_json
     end
 
     b.report('Presenters Simple: Collection') do
@@ -137,7 +137,7 @@ module SerializationBenchmark
     end
 
     b.report('AMS Complex: Collection') do
-      ActiveModel::ArraySerializer.new(event_collection, each_serializer: Basketball::EventSerializer).to_json
+      ActiveModel::Serializer::CollectionSerializer.new(event_collection, each_serializer: Basketball::EventSerializer).to_json
     end
 
     b.report('Presenters Complex: Collection') do
