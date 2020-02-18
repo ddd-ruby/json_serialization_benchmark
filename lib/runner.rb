@@ -1,5 +1,5 @@
 module Runner
-  def self.run(rabl: false, ams: true, presenters: true, api_view: true)
+  def self.run(rabl: true, ams: true, presenters: true, api_view: true)
     collection_size = 100
     rabl_view_path  = File.expand_path(File.dirname(__FILE__) + '/rabl/views')
 

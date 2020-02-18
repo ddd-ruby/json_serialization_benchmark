@@ -27,42 +27,47 @@ presenters for JSON serialization.
 
 ## Results:
                                                   user     system      total        real       allocations      memsize
-    RABL Ultra Simple                         2.540000   1.660000   4.200000 (  4.263888)               94        12226
-    AMS Ultra Simple                          0.370000   0.010000   0.380000 (  0.389094)               51         3786
-    ActiveSerializer Ultra Simple             0.250000   0.010000   0.260000 (  0.265010)               50         3370
-    Presenters Ultra Simple                   0.120000   0.000000   0.120000 (  0.128774)               24         1610
-    ApiView Ultra Simple                      0.130000   0.000000   0.130000 (  0.138166)               11          914
+    RABL Ultra Simple                         1.911337   1.676705   3.588042 (  3.589055)               80         9148
+    AMS Ultra Simple                          0.243042   0.009323   0.252365 (  0.254243)               44         2914
+    ActiveSerializer Ultra Simple             0.162020   0.000165   0.162185 (  0.162234)               42         2810
+    Presenters Ultra Simple                   0.092353   0.000240   0.092593 (  0.092715)               24         1490
+    ApiView Ultra Simple                      0.222568   0.000420   0.222988 (  0.223057)               40         3132
     -------------------------------------------------------------------------------------------------------------------
-    RABL Simple                              13.840000   9.040000  22.880000 ( 24.286793)              496        66863
-    AMS Simple                                1.610000   0.010000   1.620000 (  1.653728)              196        14654
-    ActiveSerializer Simple                   0.980000   0.010000   0.990000 (  1.034031)              205        12990
-    Presenters Simple                         0.510000   0.010000   0.520000 (  0.543052)               97         6798
-    ApiView Simple                            0.220000   0.000000   0.220000 (  0.233541)               15         2126
+    RABL Simple                              10.372594   8.619620  18.992214 ( 19.004412)              441        57986
+    AMS Simple                                1.294465   0.002461   1.296926 (  1.299156)              200        15166
+    ActiveSerializer Simple                   0.658684   0.001181   0.659865 (  0.660253)              168        11734
+    Presenters Simple                         0.368717   0.000406   0.369123 (  0.369283)               96         6894
+    ApiView Simple                            0.718818   0.001030   0.719848 (  0.720012)              132        12212
     -------------------------------------------------------------------------------------------------------------------
-    RABL Complex                             28.410000  17.640000  46.050000 ( 48.414340)             1026       139082
-    AMS Complex                               2.620000   0.040000   2.660000 (  2.838306)              306        23410
-    ActiveSerializer Complex                  1.460000   0.020000   1.480000 (  1.660751)              237        15708
-    Presenters Complex                        1.210000   0.020000   1.230000 (  1.568715)              200        15384
-    ApiView Complex                           0.220000   0.000000   0.220000 (  0.226679)               19         1933
+    RABL Complex                             21.018171  17.441400  38.459571 ( 38.487034)              889       120054
+    AMS Complex                               1.971424   0.003565   1.974989 (  1.977962)              317        23266
+    ActiveSerializer Complex                  0.748860   0.000795   0.749655 (  0.749899)              193        13500
+    Presenters Complex                        0.764698   0.000652   0.765350 (  0.765593)              199        14480
+    ApiView Complex                           0.530054   0.001296   0.531350 (  0.531919)              100         8306
 
 
     Collection tests:
 
                                                     user     system      total        real       allocations      memsize
-    RABL Ultra Simple: Collection               2.370000   1.780000   4.150000 (  4.604278)             7599      1063369
-    AMS Ultra Simple: Collection                0.430000   0.010000   0.440000 (  0.503199)             6114       444906
-    ActiveSerializer Ultra Simple: Collection   0.250000   0.010000   0.260000 (  0.271704)             5408       355914
-    Presenters Ultra Simple: Collection         0.120000   0.000000   0.120000 (  0.121700)             3508       207914
-    ApiView Ultra Simple: Collection            0.050000   0.000000   0.050000 (  0.045178)              310        41594
+    RABL Ultra Simple: Collection               1.856389   1.676163   3.532552 (  3.533854)             6885       924536
+    AMS Ultra Simple: Collection                0.233785   0.004487   0.238272 (  0.239858)             5012       334842
+    ActiveSerializer Ultra Simple: Collection   0.154564   0.000387   0.154951 (  0.154999)             4308       287874
+    Presenters Ultra Simple: Collection         0.082595   0.000511   0.083106 (  0.083147)             2908       171874
+    ApiView Ultra Simple: Collection            0.155942   0.000971   0.156913 (  0.156980)             3210       267354
     ---------------------------------------------------------------------------------------------------------------------
-    RABL Simple: Collection                    13.840000   9.090000  22.930000 ( 25.651890)            47403      6520053
-    AMS Simple: Collection                      2.370000   0.050000   2.420000 (  2.585041)            28314      2153806
-    ActiveSerializer Simple: Collection         1.130000   0.030000   1.160000 (  1.310037)            23708      1516314
-    Presenters Simple: Collection               0.620000   0.010000   0.630000 (  0.660961)            16008      1021114
-    ApiView Simple: Collection                  0.120000   0.000000   0.120000 (  0.123044)              711       162834
+    RABL Simple: Collection                    10.511576   8.929531  19.441107 ( 19.486008)            42985      5826758
+    AMS Simple: Collection                      1.925473   0.013268   1.938741 (  1.949859)            29012      2167742
+    ActiveSerializer Simple: Collection         0.748552   0.003462   0.752014 (  0.752574)            18508      1351474
+    Presenters Simple: Collection               0.469276   0.006352   0.475628 (  0.476481)            12908       931474
+    ApiView Simple: Collection                  0.652091   0.004302   0.656393 (  0.656761)            12411      1175394
     ---------------------------------------------------------------------------------------------------------------------
-    RABL Complex: Collection                   30.440000  18.910000  49.350000 ( 53.342557)            99513     13783287
-    AMS Complex: Collection                     2.320000   0.030000   2.350000 (  2.396835)            28314      2153806
-    ActiveSerializer Complex: Collection        1.520000   0.030000   1.550000 (  1.916880)            27708      1861714
-    Presenters Complex: Collection              1.370000   0.040000   1.410000 (  1.440246)            34308      2335714
-    ApiView Complex: Collection                 0.120000   0.010000   0.130000 (  0.126791)             1111       143534
+    RABL Complex: Collection                   20.683123  17.411162  38.094285 ( 38.133114)            87786     12064159
+    AMS Complex: Collection                     1.733472   0.010716   1.744188 (  1.746106)            29012      2167742
+    ActiveSerializer Complex: Collection        0.843026   0.012633   0.855659 (  0.855865)            21408      1563274
+    Presenters Complex: Collection              0.873950   0.006703   0.880653 (  0.880845)            27408      1958874
+    ApiView Complex: Collection                 0.450063   0.002952   0.453015 (  0.453531)             9211       784794
+
+
+## Verdict
+
+In recent MRI Ruby (2.5.7) ApiView does not hold a clear beneficial position and can be easily replaced by ActiveSerializer.
