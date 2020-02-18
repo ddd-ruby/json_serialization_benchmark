@@ -7,6 +7,7 @@ Oj.mimic_JSON() # this will speedup benchmarks using #to_json
 require 'bixby/bench'
 
 require 'active_support/core_ext/object/json'
+require 'active_support/core_ext/object/deep_dup'
 
 require 'models/model'
 require 'models/box_score'
